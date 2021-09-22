@@ -1,0 +1,3 @@
+h2 + p /* HERMANO CERCANO: Con esto le estamos diciendo que todas las etiquetas "p" que esten cercas a una etiqueta hermana "h2" se le apliquen los siguientes estilos */{
+    color: red;
+}

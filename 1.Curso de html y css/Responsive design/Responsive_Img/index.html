@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Img</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <picture>
+            <source media="(min-width:1300px)" srcset="./Img/grande.jpg"> <!-- Con media le decimos a partir de que pixelaje renderiza dichas imagenes -->
+            <source media="(min-width:1000px)" srcset="./Img/mediana.jpg"> <!-- Esto es para que el navegador sea el que decida que tipo de imagen es la que va a renderizar el proyecto -->
+            <!-- Siempre debe ir de la imagen con el viewport mas grande al mas chico -->
+            <img src="./Img/pequeña.jpg" alt="">
+        </picture>
+    </main>
+</body>
+</html>
+
+<!-- Usar picture, nos permitira que una imagen sea responsive -->
+<!-- Em imagenes usar el width al 100% siempre será la mejor opcion -->

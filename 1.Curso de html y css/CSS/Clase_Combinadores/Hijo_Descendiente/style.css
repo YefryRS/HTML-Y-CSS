@@ -1,0 +1,8 @@
+
+div > p /* CHILD: se le aplican los estilos a las etiquetas "p" que sean hijas directas de la etiqueta "div". Si su padre directo no es "div", entonces no se le aplican */{
+    color: red;
+}
+
+div p /* DESCENDIENTE: Todas las etiquetas "p" que esten dentro del "div" se le aplican estos estilos. Este combinador es el mas comun */{
+    color: blue;
+}

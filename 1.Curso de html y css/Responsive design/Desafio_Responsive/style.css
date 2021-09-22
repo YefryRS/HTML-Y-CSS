@@ -1,0 +1,38 @@
+:root {
+    --color-primary: #720000;
+    --color-secundary: #535353;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.nav {
+    background-color:var(--color-primary);
+    width: 100vw;
+    height: 10vh;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+}
+.c1, .c2 {
+    height: 32.2rem;
+    width: 100vw;
+}
+.c1 {
+    background-color: var(--color-secundary);
+}
+.c2 {
+    background-color: grey;
+}
+.pie {
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 10vh;
+}

@@ -1,0 +1,18 @@
+*  /*  Siempre agregar este selector llamado "selector universal" en todos los proyectos, para poder resetear los valores que trae el navegador por defecto */{
+    box-sizing: border-box; /* este totaliza el 100% del width restandole al contenedor el "border" y el "padding", para que asi no tengamos que hacer "skroll".No tiene en cuenta en "margin" */
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px; /* El navegador entiende que los 20px son arriba y abajo, y los 35px son para la derecha e izquierda */
+
+    /* Estos 4 padding es para decirdir si lo quiero arriba,abajo, a la derecha o a la izquierda */
+    /* padding-top: arriba; */    
+    /* padding-bottom: abajo; */
+    /* padding-right: derecha; */
+    /* padding-left: izquierda; */  
+}

@@ -1,0 +1,12 @@
+main {
+    background-color: red;
+    width: 100%; /* Esta es una medida relativa, ya que el tamaño de la pantalla es la que va a condicionar nuestra "width", y no sera igual 100% en una pc que en un celular */
+    height: 500px; /* Esta es una medida absoluta, porque sin importar el tamaño de la pantalla siempre nuestra "height" será de 500 px */
+}
+p {
+    font-size: 16px; 
+}
+
+
+/* Es importante que al usar el "width" preferiblemente usemos la medida relativa, porque si no es muy probable que limitemos al usuario, pues si su pantalla es chica, tendria que estar
+haciendo skroll, y si es mas grande, podria dejar algun espacio en blanco  */

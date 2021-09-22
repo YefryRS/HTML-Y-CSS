@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    outline: 2px solid #000;
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    font-size: 20px;
+    display: grid;
+    /* justify-items: center; */  /* la alineacion es horizontal */
+    /* align-items: center; */ /* alineacion vertical */
+    /* grid-auto-flow: column; */  /* Define el flujo de los elementos, por defectos vienen horizontalmente */
+    grid-template-columns: repeat(4, 1fr) ; /* Crea columnas */
+    grid-template-rows: repeat(4,1fr) ; /* crea filas */
+    gap: 15px; /* espaciadores entre las filas y columnas */
+    grid-template-areas: 
+    "elemento1 elemento1 elemento1 elemento2"
+    "elemento3 elemento3 elemento3 elemento2"
+    "elemento3 elemento3 elemento3 elemento2"
+    "elemento4 elemento4 elemento4 elemento4"; /* Aqui creo areas y en cada elemento nombro el area que deseo que ocupe */
+}
+.element {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* Lo que hize fue acomodar a los elementos en base a las lineas. Aunque otra manera que tanbien sirve es crear areas en el container y llamarlas en cada elemento */
+.element1 {
+    background-color: crimson;
+    grid-area: elemento1; /* Para llamar el area se usa esta propiedad */
+    /* grid-column: 1/span 3; */
+}
+.element2 {
+    background-color: dodgerblue;
+    grid-area: elemento2;
+    /* grid-column: 4/5;
+    grid-row: 1/ span 3; */
+}
+.element3 {
+    background-color: coral;
+    grid-area: elemento3;
+    /* grid-column: 1/span 3;
+    grid-row: 2/ span 2; */
+}
+.element4 {
+    background-color: darkslateblue;
+    grid-area: elemento4;
+    /* grid-column: 1 /5 ; */
+}

@@ -1,0 +1,32 @@
+.main-nav {
+    margin-top: 10px;/* espacio en margenes */
+    list-style: none; /*  "estilos de una lista" ,esta nos sirve para que en la lista no nos salgan los puntos */
+    padding-left: 0; /* espacion interno, permite que no haya espacio en el borde izquierdo */
+    background-color: rgb(115, 202, 119); /* color de fondo */
+}
+
+.main-nav__item {
+    display: inline-block; /* los elementos pasen de vertical a horizontal, pues esto es una barra de navegacion */
+}
+
+.main-nav__item a /* esto es ser especifico en css, pues estamos mencionando que a todas las etiquetas "a" que estan dentro del elemento "item" con la clase "main-nav" se le apliquen
+los siguientes estilos  */{
+    color: white; /* cambiar el color de las letras */
+    padding: 5px;
+    border-radius: 5px; /* si la informacion esta en un recuadro, esto sirve para que las esquinas esten redondeadas */
+    text-decoration: none; /* para quitar la raya que hay abajo del texto */
+    /* background-color:gray; */ 
+}
+
+/* Las siguientes son PseudoClases, esto se manda a llamar con 2 puntos (:) */
+.main-nav__item a:hover /*  cuando el mouse este arriba del elemento se de un efecto */{
+    color: blue;
+}
+.main-nav__item a:active /* Cuando le doy click al elemento se coloca en este color, lo que significa que esta activo */{
+    color: red;
+}
+
+/* Las siguientes son PseudoElementos, esto se mandan a llamar con 4 puntos (::) */
+.main-nav__item a::after {
+    content:"  |  " ;
+}

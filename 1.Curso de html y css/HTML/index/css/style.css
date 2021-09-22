@@ -1,0 +1,48 @@
+
+
+body {
+    background-color: mistyrose;
+    width: 600px;
+    margin: auto;
+    border: lightslategrey;
+}
+
+h1 {
+    text-align: justify;
+}
+
+.Padre {
+    color: rgba(223, 17, 17, 0.747);
+    font-size: 30px;
+}
+
+.manzana {
+  height: 100px;
+}
+
+.manzana img {
+  height: 100%; 
+  border-image: space; 
+}
+
+.platano img{
+  height: 100px;
+}
+
+#salmon img {
+  height: 150px;
+}
+
+figcaption {
+  color: rgb(153, 106, 25);
+  font-size: 20px;
+}
+
+#final {
+  font-size: 25px;
+  
+}
+
+.Padre-verduras img {
+  height: 200px;
+}

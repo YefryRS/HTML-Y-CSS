@@ -1,0 +1,11 @@
+html {
+   /* Tamaño de fuente */ font-size: 75%; /* el tamaño de parrafo es de 16px, y con esto hacemos que la etiqueta hija "p" herede lo de su padre "html" */
+   /* Tipo de fuente */ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 /* no toma el codigo de su padre ya que el navegador le da una por defaut, solo toma el tipo de fuente */ {
+    font-size: inherit; /* inherit sirve para heredar estilos de una etiqueta padre */
+}
+
+/* "h1" y "p" pueden heredar de html debido a que sus etiquetas padres no tienen un estilo especifico. Las etiquetas hijas heredaran los estilos de sus padres, pero si alguna etiqueta hija 
+viene con un estilo dado por el navegador no la herederá, por tanto si deseamos que herede el estilo de su padre usaremos "inherit" */

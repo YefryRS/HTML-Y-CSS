@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main /* Aqui estamos diciendo que el viewport de este contenido ocupe el 100% de nuestro "width" y "height", sin importar el tamaño de la pantalla */ {
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 500px;/* Aqui estamos diciendo que la altura minima que se va a tener es de 500px, pero si tienes contenido que excede los 500px, crece hasta que termine tu contenido */
+    margin: 0 auto; /* Aqui estamos diciendo que de arriba y abajo lo deje en "0" y que de derecha a izquierda le coloce las margenes automaticamente */
+    background-color: red;
+}
+
+/* Con el "vw" y "vh" logramos especificar cuanto de nuestro contenido va a ocuparse en la pantalla */
+/* Cuando queramos usar el "min" o "max" en el "width", tendremos que tener un width base, por lo general será en porcentaje */
+/* "Min-width" y "Max-height" lo que hacen es que nuestro contenido tenga un minimo o un maximo de crecimiento de ancho*/
+
+/* Cuando queramos usar el "min" o "max" en el "height", NO tendremos que tener un height de base */
+/* Con el "min-height" logramos que el navegador coloque un minimo de "height", pero si tenemos texto que es mayor a este, entonces el height seguirá 
+hasta que termine el texto */
+/* Con el "max-height" le indicamos que no va a crecer despues de cierto punto, para delimitar la altura de nuestro contenedor */

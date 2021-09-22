@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container {
+     border: 0.3rem solid black;
+     display: flex;
+     flex-wrap: wrap;
+ }
+.box {
+     height: 10rem;
+     flex-basis: 10rem; /*Permite que el contenido se acomode a la pantalla, si esta se achica, con esto haremos que el tamaño de las cajas sea uniforme,rellenado el contenedor padre */
+     flex-grow: 1;
+ }
+.box1  {
+    background-color: red;
+ }
+.box2 {
+    background-color: rosybrown; 
+}
+.box3 {
+    background-color: slategray;
+}
+.box4 {
+    background-color: springgreen;
+}
+.box5 {
+    background-color: moccasin;
+
+}
+.box6 {
+    background-color: mediumorchid;
+}
+
+/* Con la propiedad "order" podemos modificar el orden de nuestros contenedores. Todos los contenedores a los cuales no les ponga un orden van a pasarse a la izquierda,
+ y los que tengan un orden inician desde el primero hacia la derecha. USAMOS ESTO EN LA CLASE  */
+
+/* Con "flex-grow: 1;" podemos rellenar el espacio que quedaba en el width, debido a que no habia mas conten. */
+
+/* Con "align-items: baseline;" podemos alinear el contenido de forma vertical. En "align item" encontramos varios valores que nos pueden ser utiles.EL valor "center" me lo alinea 
+en el centro. El "flex-end" me lo alinea al final del contenedor principal. el "stretch" va a hacer que el contenido ocupe 100% el contenedor principal de forma vertical, pero
+para que funciones no debo tener un height definido. el "baseline" permite que la caja donde esta nuestro contenido sea tan grande como el espacio de nuestro contenido, igualmente
+no debemos colocar un height para no limitar su crecimiento. USAMOS ESTO EN LA CLASE "container" */

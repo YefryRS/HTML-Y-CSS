@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container {
+     border: 0.3rem solid black;
+     display: flex;
+     flex-direction: row; /* Permite que nuestro contenido le demos direccion, en este caso es horizontal */
+     flex-wrap: wrap; /* Esto permite que si la pantalla es chica, el contenedor principal y sus contenidos se ajusten automaticamente al tamaño de la pantalla, por lo cual no tendré 
+     que preocuparme si el contenedor tiene un tamaño de altura o anchura */
+     justify-content: space-evenly; /* Permite que nuestro contenido se alinie de forma horizontal. El "space-around" lo que hace es que entre nuestros contenidos haya cierto espacio.
+     El "space-evenly"garantiza que el espacio que se proporcione sea igual */
+ }
+.box {
+     width: 10rem;
+     height: 10rem;
+ }
+.box1  {
+    background-color: red;
+ }
+.box2 {
+    background-color: rosybrown;
+}
+.box3 {
+    background-color: slategray;
+}
+.box4 {
+    background-color: springgreen;
+}
+.box5 {
+    background-color: moccasin;
+}
+.box6 {
+    background-color: mediumorchid;
+}

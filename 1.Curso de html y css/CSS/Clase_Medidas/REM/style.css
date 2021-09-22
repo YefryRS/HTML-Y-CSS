@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+p {
+    font-size: 1.6rem;
+}
+
+/* "REM" siempre va a tener en cuenta a nuestra etiqueta html a diferencia de "EM", que tenia en cuenta a la etiqueta padre directa */
+
+/* Por buenas practicas, para el font-size deberiamos usar px, y el rem nos ayuada con esto */

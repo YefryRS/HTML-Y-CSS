@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="esta pagina te mostrara fotos de gatos" />
+    <meta name="robots" content="index,follow" />
+    <title>Es mi página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Lista del Súpermercado</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li class="Padre">Frutas</li>
+                <ol>
+                    <li>manzana</li>
+                    <figure class="manzana">  
+                        <img src="./pic/manzana.jpg" alt="Esto es una manzana">
+                    </figure>
+                    <li>Platano</li>
+                    <figure class="platano">  
+                        <img src="./pic/Platanos .jpg" alt="Esto es un platano">
+                    </figure>
+                </ol>
+            </ul>
+            <ul>
+                <li class="Padre">Carnes</li>
+                <figure id="salmon">
+                    <img src="./pic/salmón (1).jpg" alt="Esto es un pedazo de salmon">
+                    <figcaption>Esta delicia deberas de probarla</figcaption>
+                </figure>
+                <ol>
+                    <li>Salmon</li>
+                    <li><a hre="https://www.bing.com/search?q=pollo+frito&FORM=HDRSC1" target="blank">Pollo</a></li>
+                </ol>
+            </ul>
+            <ul>
+                <li class="Padre">Verdura</li>
+                <ol>
+                    <figure class="Padre-verduras">
+                        <img src="./pic/verduras.jpg" alt="Verduras frescas y sanas">
+                    </figure>
+                    <li>Tomate</li>
+                    <li>Cebolla</li>
+                </ol>
+            </ul>
+            <p id="final">Hecho con mucho amor</p>
+        </section>
+        <section>
+            <article>
+                <video src="./pic/Video .mp4" controls preload="auto"></video>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <form action="">
+                    <label for="Comida">
+                        <span>¿Cual es tu comida favorita?</span>
+                        <input type="text" id="Comida" placeholder="Comida favorita" required>
+                    </label>
+                    <input type="submit">
+                </form>
+                <form action="">
+                    <label for="Horario de alimentos">
+                        <span>¿En que horario te gusta comer?</span>
+                        <input type="datetime-local" id="Horario de alimentos" name="Horario de alimentos" required>
+                    </label>
+                    <input type="submit">
+                </form>
+                <input list="Grupo de alimentos">
+                <datalist id="Grupo de alimentos">
+                    <option value="Carbohidratos"></option>
+                    <option value="Proteinas"></option>
+                    <option value="Grasas"></option>
+                </datalist>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

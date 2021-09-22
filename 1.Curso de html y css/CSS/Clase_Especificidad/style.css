@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: serif; /* Tipo de fuente */
+    color: purple; /* Color de fuente */
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 18px;
+    font-family: monospace;
+}
+.nav {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+.nav li {
+    display: inline-block;
+}
+.nav a /* estamos diciendo que todas las etiquetas "a" que esten dentro del id "main-nav" se le agreguen estos estilos, haci estamos siendo especificos */{
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.nav .blog /* Aqui usamos la especificidad para darle estilo, pues como tenemos 2 clases el navegador va a aplicar los estilos que queremos */ {
+    background-color: red;
+}
+
+/* Si solo le quiero dar estilo a 1 sola cosa, le coloco una clase en vez de hacer estilo enbebido */
+/* como tengo una clase, un id y un elemento con la misma propiedad, el navegador me va a tomar en cuenta la propiedad del "id", pues es el de mayor especificidad  */
+/* para mayor especificidad llamo el elemento despues de el "id" o la "class" */
+
+/* MAS SOBRE SELECTORES : 1) Si un estilo no nos sale NO utilizemos "!important", esto no es una buena practica. 2) los "id" son importantes, pero NO usemos muchos "id" para estilar en css.
+3) Si una etiqueta tiene "id" y "class", llamamos a la clase para hacer el estilo, no al "id". 4) En este caso podemos eliminar los "id" y unicamente dejar las "class", ya que ambas hacen
+referencia a la misma etiqueta */

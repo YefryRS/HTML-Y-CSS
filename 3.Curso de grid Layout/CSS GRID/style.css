@@ -1,0 +1,20 @@
+/* CONCEPTOS NECESARIOS */
+
+/* Los siguientes son propiedades que se le aplican al contenedor */
+/* 1. Se crea con un display grid en el container */
+/* 2. Es necesario crear un layout con filas y columnas, para ello usamos grid-template-columns y grid-template-rows. Estas se indican con medidas */
+/* 3. una medida muy util es el fr, el cual indica una fraccion */
+/* 4. La propiedad repeat se usa para que al momento de crear filas y columnas no tengamos que repetir algo muchas veces por ejemplo
+grid-template-columns: repeat (3, 1fr) nos creara 3 columnas de las medidas dadas*/
+/* 5. si queremos que haya separacion entre cada cuadricula usamos la propiedad gap */
+/* 6. con las propiedades grid-auto-columns y grid-auto-rows lo que hacemos es decirle al navegador que cuando cree grid implicitos les de determinado tamaño  */
+/* 7. Para hacerlo responsive podemos hacer lo siguiente grid-template-columns: repeat ( auto-fit, minmax(120px,1fr) ); al hacer esto lo que estamos diciendo es que en 1er lugar acomode el contenido de acuerdo al tamaño de la pantalla, y en 2do lugar que nuestro contenido tenga un tamaño minimo dado y un tamaño maximo decidido por el navegador. Esta es una forma interesante de hacer responsive sin usar mediaquieres */
+/* 8. Existen 2 tipos de grid, el implicito y el explicito. EL explicito es aquel en el cual uno mismo escribe las filas y columnas y el implicito es aque en el cual uno no lo escribe pero aun asi se crean, por ejemplo cuando se crean columnas pero no filas, por tanto el navegador se ve obligado a crear filas dependiendo del contenido */
+/* 9. Con grid-auto-flow: flow dense; hacemos que en caso de que se creen mas tracks implicitos y generen espacios en navegador los rellene si le es posible */
+
+/* Las siguientes se aplican a los hijos */
+/* 1. Si queremos posicionar un elemento en cierto lugar podemos hacerlo definiendo la linea inicial y la final, por ejemplo
+grid-column: [inicial] / [final]; y grid-row: [inicial] / [final]; de esta manera le diremos de que linea a que linea deseamos que vaya */
+/* 2. Podemos usar la palabra span para que se cuenten los tracks ya sea filas o columnas, por ejemplo en vez de decir grid-column: 1 / 6; o sea que vaya de la linea 1 a la linea 6, podriamos decir grid-column: 1 / span 5; (si no le pongo un inicio este tomara el espacion pero desde su comienzo normal) o sea que empieze en la linea y me ocupe 5 cuadriculas*/
+
+

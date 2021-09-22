@@ -1,0 +1,16 @@
+/* Hay 3 maneras de darle estilo a las etiquetas, que es mediante selectores, la primera es por la etiqueta */
+p {
+    color: blue;
+    font-size: 40px;
+}
+
+/* la segunda por la clase, este inicia con un "punto" seguido del nombre de la clase*/
+.paraffo {
+    color: red;
+}
+
+/* la tercera es por el id, este inicia con un "numeral" seguido del nombre de la clase */
+#texto {
+    color: yellowgreen;
+    font-size: 24px;
+}

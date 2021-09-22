@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+        <!-- Esta 1ra manera no es muy buena, ya que para quien lo haga desde un movil puede ser incomodo -->
+        <select name="Cursos" id="">
+            <option value="JavasCript">JavasCript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standards">Web Standards</option>
+        </select>
+
+        <!-- Esta 2da manera es la correcta, ya que permite una mejor experiencia al usuario -->
+        <input list="Cursos">
+        <datalist id="Cursos">
+            <option value="JavaScript"></option>
+            <option value="THML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standards"></option>
+        </datalist>
+    </main>
+</body>
+</html>
