@@ -1,0 +1,9 @@
+// 4. Con sass podemos usar el "Imports", que nos permite modularizar nuestro codigo para facilitar su legibilidad, y cada uno de los archivos los mandamos a llamar a un archivo principal. 
+
+//Es importante que los archivos modularizados empiezen con un "_"(guion bajo) y que el primer archivo que importemos sea el que tenga nuestras variables
+@import "./componentes/globales";
+@import "./componentes/perfiles";
+@import "./componentes/estadisticas";
+@import "./componentes/ubicaciones";
+@import "./componentes/galerias"
+

@@ -1,0 +1,37 @@
+// 2. las variables se crean en sass con el signo de "$"
+
+$Fuente1: 'Lato', sans-serif;
+$Fuente2: 'Oswald', 'sans-serif';
+$color-primario: #333333;
+$color-claro: #FFFFFF;
+$color-secundario: #8841DA;
+$color-variacion: #3f579a;
+
+// 5. Los mixin nos permiten guardar un bloque codigo que veamos que puede ser reutilizado multiples veces. Revisar el archivo de "estadisticas" y el de "ubicaciones"
+
+@mixin caja {
+	border-radius: 20px;
+	box-shadow: 0 20px 33px 0 rgba(0,0,0, 0.50);
+	color: $color-primario;
+	background-color: $color-claro;
+}
+
+// 6. con sass podemos crear funciones. Ver el archivo "perfiles"
+@function get-opacity($color,$nivel) {
+	@return rgba($color,$nivel);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $Fuente1;
+}
+
+main {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
