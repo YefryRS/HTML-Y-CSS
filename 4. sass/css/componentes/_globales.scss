@@ -16,9 +16,29 @@ $color-variacion: #3f579a;
 	background-color: $color-claro;
 }
 
+//8. Condicionales
+@mixin titulos($fuente) {
+	@if $fuente==$Fuente1 {
+		font-family: $Fuente1;
+	}
+	@else {
+		font-family: $Fuente2;
+		text-transform: uppercase
+	}
+}
+
 // 6. con sass podemos crear funciones. Ver el archivo "perfiles"
 @function get-opacity($color,$nivel) {
 	@return rgba($color,$nivel);
+}
+
+
+//7. Loops
+@each $header,$size in (h1: 30px, h2: 25px, h3: 20px) {
+	#{$header} {
+		font-size: $size;
+		margin: 0;
+	}
 }
 
 * {
